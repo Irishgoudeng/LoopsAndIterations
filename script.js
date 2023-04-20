@@ -19,10 +19,12 @@ for (i = 0; i <= 30; i++) {
 }
 
 document.write("<h2>Even numbers 0-40:</h2>");
-for (i = 0; i <= 40; i+=2) {
-    document.write(i + "<br>");
-}
-
+for (let i = 0; i <= 40; i++) {
+    if (i % 2 === 0) {
+      document.write(i + "<br>");
+    }
+  }
+  
 document.write("<h2>Multiples of 3, descending from 40 to 10:</h2>");
 for (i = 40; i >= 10; i-=3) {
     document.write(i + "<br>");
