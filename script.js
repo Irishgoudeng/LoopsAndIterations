@@ -25,7 +25,10 @@ for (let i = 0; i <= 40; i++) {
     }
   }
   
+
 document.write("<h2>Multiples of 3, descending from 40 to 10:</h2>");
-for (i = 40; i >= 10; i-=3) {
-    document.write(i + "<br>");
+for (i = 40; i >= 10; i--) {
+    if (i % 3 === 0) {
+        document.write(i + "<br>");
+    }
 }
